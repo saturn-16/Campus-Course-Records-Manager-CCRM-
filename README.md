@@ -9,7 +9,7 @@ You'll need a Java Development Kit (JDK) installed on your machine.
 
 Running the Application
 1. Clone the Repository - 
-git clone [https://github.com/your-username/ccrm-](https://github.com/saturn-16/Campus-Course-Records-Manager-CCRM-)project.git
+git clone- (https://github.com/saturn-16/Campus-Course-Records-Manager-CCRM-)project.git
 cd ccrm-project
 
 2.Compile the Code - 
