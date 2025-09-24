@@ -62,10 +62,15 @@ Design Patterns --
 
 The project is organized into clear packages for maintainability and logical separation of concerns.
 1.edu.ccrm.cli: The menu-driven command-line interface.
+
 2.edu.ccrm.config: Singleton configuration classes.
+
 3.edu.ccrm.domain: The core data model classes (e.g., Student, Course).
+
 4.edu.ccrm.io: Services for file import, export, and backups.
+
 5.edu.ccrm.service: The business logic layer for all operations.
+
 6.edu.ccrm.util: Utility and helper classes, including custom exceptions
 
 📝 License --
