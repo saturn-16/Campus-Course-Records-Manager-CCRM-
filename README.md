@@ -23,8 +23,11 @@ java -cp bin edu.ccrm.cli.CCRM_CLI
 
 CCRM offers a full suite of academic management tools, all accessible via a simple, menu-driven command-line interface.
 1.Student Management: Add, update, and deactivate students. Print student profiles and transcripts.
+
 2.Course Management: Add, update, and deactivate courses. Search and filter courses by instructor, department, or semester using the Stream API.
+
 3.Enrollment & Grading: Enroll and unenroll students from courses with built-in business rules (e.g., max credits per semester). Record marks and compute GPAs.
+
 4.File Utilities: Import students/courses from CSV files and export current data to files. Create a timestamped backup folder and calculate its total size recursively.
 
 🛠️ Technical Details --
