@@ -41,9 +41,13 @@ Java Platform & Architecture
 Core Language Concepts --
 
 1.Object-Oriented Programming (OOP): The project demonstrates Encapsulation, Inheritance, Abstraction, and Polymorphism. The Person class is an abstract parent for Student and Instructor.
+
 2.Enums: Used for Semester and Grade with custom fields and constructors.
+
 3.Stream API: Used for efficient data processing, such as searching and filtering course lists.
+
 4.File I/O: The modern NIO.2 (Path, Files) API is used for all file operations.
+
 5.Exceptions: The application features robust exception handling, including custom checked exceptions like MaxCreditLimitExceededException.
 
 Design Patterns -- 
