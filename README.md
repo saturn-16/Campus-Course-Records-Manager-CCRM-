@@ -1,34 +1,57 @@
-Campus Course & Records Manager (CCRM)
-Project Overview
-CCRM is a console-based Java application designed to manage student and course records for an educational institution. The application allows for student and course management (creation, updates, and listings), enrollment, and grading. It includes robust file utilities for data import/export and backups. The project is built using Java SE and demonstrates key programming concepts such as Object-Oriented Programming (OOP) , modern I/O with NIO.2 , the Stream API , and design patterns.
+📚 Campus Course & Records Manager (CCRM)
+A Java SE Console Application for Academic Administration
+Welcome to the Campus Course & Records Manager, a robust, console-based Java application designed to streamline academic record-keeping. This project demonstrates a wide array of core Java principles and modern programming practices, from a clear OOP design to advanced file handling with NIO.2.
 
+🚀 Getting Started
+Prerequisites
+You'll need a Java Development Kit (JDK) installed on your machine.
+  --To check your JDK version, open your terminal and run: java -version
 
-How to Run
-Prerequisites: Ensure you have a Java Development Kit (JDK) version 8 or higher installed. You can verify this by running java -version in your terminal.
-Clone the Repository: Clone this Git repository to your local machine.
-Navigate to the Project Directory: Open your terminal or command prompt and go to the project's root directory.
+Running the Application
+1. Clone the Repository - 
+git clone https://github.com/your-username/ccrm-project.git
+cd ccrm-project
 
-Compile the Code: Compile all Java source files using the javac command.
+2.Compile the Code - 
 javac -d bin -cp bin src/edu/ccrm/**/*.java
 
-Run the Application: Execute the main class from the bin directory.
+3.Run the Main Class
 java -cp bin edu.ccrm.cli.CCRM_CLI
 
-Enable Assertions (Optional): If you want to run the application with assertions enabled, use the -ea flag.
-java -ea -cp bin edu.ccrm.cli.CCRM_CLI
+📋 Features
+CCRM offers a full suite of academic management tools, all accessible via a simple, menu-driven command-line interface.
+1.Student Management: Add, update, and deactivate students. Print student profiles and transcripts.
+2.Course Management: Add, update, and deactivate courses. Search and filter courses by instructor, department, or semester using the Stream API.
+3.Enrollment & Grading: Enroll and unenroll students from courses with built-in business rules (e.g., max credits per semester). Record marks and compute GPAs.
+4.File Utilities: Import students/courses from CSV files and export current data to files. Create a timestamped backup folder and calculate its total size recursively.
 
-Notes on Enabling Assertions
-Assertions are disabled by default in the Java Virtual Machine (JVM). To enable them at runtime, you must use the -ea or -enableassertions flag in the java command. For example, java -ea MyMainClass. Assertions are used in this project to enforce invariants, such as non-null IDs and valid credit bounds, and should be enabled during development and testing to catch logical errors.
+🛠️ Technical Details
+This project is a showcase of key Java SE concepts.
 
-Java Platform Comparison
-Java SE (Standard Edition): The core platform for building desktop and server-side applications. It includes the Java language, the Java Virtual Machine (JVM), and a comprehensive set of libraries.
-Java EE (Enterprise Edition): A set of specifications and APIs for building large-scale, multi-tiered, and distributed enterprise applications. It extends Java SE with features for web services, networking, and security.
-Java ME (Micro Edition): A subset of Java designed for resource-constrained devices like mobile phones, embedded systems, and consumer electronics.
-Java Architecture: JDK, JRE, and JVM
+Java Platform & Architecture
+1.Java SE is the core platform used for this project. It is differentiated from Java EE (for large-scale enterprise apps) and Java ME (for embedded devices).
 
-JVM (Java Virtual Machine): An abstract machine that provides the runtime environment for executing Java bytecode. The JVM reads .class files and translates the bytecode into the native machine code of the underlying hardware. It's the component that makes Java "write once, run anywhere."
+2.The project relies on the standard JDK, JRE, and JVM architecture.
 
-JRE (Java Runtime Environment): A set of software tools that includes the JVM and the core Java class libraries. It is the minimum requirement for running a Java application.
+Core Language Concepts --
+1.Object-Oriented Programming (OOP): The project demonstrates Encapsulation, Inheritance, Abstraction, and Polymorphism. The Person class is an abstract parent for Student and Instructor.
+2.Enums: Used for Semester and Grade with custom fields and constructors.
+3.Stream API: Used for efficient data processing, such as searching and filtering course lists.
+4.File I/O: The modern NIO.2 (Path, Files) API is used for all file operations.
+5.Exceptions: The application features robust exception handling, including custom checked exceptions like MaxCreditLimitExceededException.
 
+Design Patterns --
+1.Singleton: The AppConfig class is a singleton to manage application-wide configuration.
+2.Builder: The Course class uses a Builder pattern to simplify object creation
 
-JDK (Java Development Kit): A superset of the JRE that includes tools for developing, debugging, and monitoring Java applications. It contains the Java compiler (javac), the Java debugger (jdb), and other tools.
+🗺️ Project Structure
+The project is organized into clear packages for maintainability and logical separation of concerns.
+1.edu.ccrm.cli: The menu-driven command-line interface.
+2.edu.ccrm.config: Singleton configuration classes.
+3.edu.ccrm.domain: The core data model classes (e.g., Student, Course).
+4.edu.ccrm.io: Services for file import, export, and backups.
+5.edu.ccrm.service: The business logic layer for all operations.
+6.edu.ccrm.util: Utility and helper classes, including custom exceptions
+
+📝 License
+This project is licensed under the MIT License.
