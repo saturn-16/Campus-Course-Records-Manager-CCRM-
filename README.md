@@ -32,6 +32,7 @@ CCRM offers a full suite of academic management tools, all accessible via a simp
 This project is a showcase of key Java SE concepts.
 
 Java Platform & Architecture
+
 1.Java SE is the core platform used for this project. It is differentiated from Java EE (for large-scale enterprise apps) and Java ME (for embedded devices).
 
 2.The project relies on the standard JDK, JRE, and JVM architecture.
